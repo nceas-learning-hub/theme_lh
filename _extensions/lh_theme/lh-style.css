@@ -4,7 +4,7 @@
   /* multiple background images - first (NCEAS logo) on top, then hex, then
   // linear gradient underneath */
   background-image: url(logo-nceas.svg),
-                    url(logo-lh.png),
+                    url(logo-lh-hex.png),
                     linear-gradient(to top right, #5C9341, #167B62, #0C4537, #000000);
   /* Then the options apply to each image in turn.  The last (100% 200px) sets
   // both the width (100%) and height (200px) of the gradient to fit the block */

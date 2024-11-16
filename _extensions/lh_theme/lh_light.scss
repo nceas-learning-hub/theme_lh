@@ -44,6 +44,8 @@ $font-size: 25px;
 // Sen, Figtree, Manrope, Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
 /////////////////////////////
 //        Doc colors       //
 /////////////////////////////
@@ -75,6 +77,10 @@ $code-block-bg: $lh-gray-0; // code block background color
 
 /*-- scss:rules --*/
 
+/////////////////////////////
+//  Navbar & Title Block   //
+/////////////////////////////
+
 // Navbar size and text height
 .navbar {
   height: 30px;
@@ -89,7 +95,14 @@ $code-block-bg: $lh-gray-0; // code block background color
   color: white;
 }
 
+.quarto-title-block code {
+  // in elements with quarto-title-block class, change code color
+  color: $lh-pur-1;
+}
 
+/////////////////////////////
+//      Other doc text     //
+/////////////////////////////
 
 // Code chunk output
 pre code:not(.sourceCode) { background-color: white; }
@@ -146,6 +159,10 @@ pre code {
   padding: 1em;
 }
 
+/////////////////////////////
+//       Slide embeds      //
+/////////////////////////////
+
 .slide-deck{
   border: 3px solid #dee2e6;
     border-top-color: rgb(222, 226, 230);
@@ -174,26 +191,10 @@ pre code {
 //     Callout styling     //
 /////////////////////////////
 
-// /* General style for the callout toggle */
-// .callout-header .callout-toggle {
-//   display: inline-block;
-//   transition: transform 0.3s ease; /* Smooth animation */
-//   font-size: 1.2rem;
-//   margin-right: 8px;
-// }
+// from https://github.com/cambiotraining/quarto-course-template/tree/main/_extensions/courseformat
 
-// /* Right-pointing triangle (initial state) */
-// .callout-header .callout-toggle::before {
-//   content: '\25B6'; /* Unicode for right-pointing triangle */
-// }
-
-// /* When the parent is not collapsed: rotate the triangle */
-// .callout-header:not(.collapsed) .callout-toggle::before {
-//   content: '\25BC'; /* Unicode for down-pointing triangle */
-// }
-
-
-// this is here due to a styling bug where a callout within a callout adds an unecessary padding at the bottom by default
+// this is here due to a styling bug where a callout within a callout adds an
+// unecessary padding at the bottom by default
 // in our case this would affect answer callout within an exercise callout
 .callout.callout-titled .callout-body > :last-child:not(.sourceCode), .callout.callout-titled .callout-body > div > :last-child:not(.sourceCode) {
   padding-bottom: 0;
