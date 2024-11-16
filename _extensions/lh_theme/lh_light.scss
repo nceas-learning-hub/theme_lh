@@ -10,26 +10,29 @@ $lh-yel-4: #855f16;
 $lh-yel-3: #DB9D26; // from LH style guide
 $lh-yel-2: #eac57d;
 $lh-yel-1: #f8ece5;
+$lh-yel-0: #DB9D2622; // semi transparent
 $lh-grn-4: #0C4537;
 $lh-grn-3: #167B62; // from NCEAS LH header
 $lh-grn-2: #a1cac0;
 $lh-grn-1: #f3f8f7;
-$lh-grn-0: #5C9341; // from NCEAS LH header
+$lh-grn-0: #0C453722; // semi-transparent
 $lh-pur-4: #4B0055; // viridis purple
 $lh-pur-3: #bc40d4;
 $lh-pur-2: #eb85ff;
 $lh-pur-1: #fae4ff;
+$lh-pur-0: #bc40d422; // semi-transparent
 $lh-blu-4: #00304b;
 $lh-blu-3: #00588B; // viridis blue
 $lh-blu-2: #4bcdce;
 $lh-blu-1: #ddecee;
+$lh-blu-0: #00588B22; // semi transparent
 $lh-cream: #F4F3EE;
-$lh-gray-0: #d6d6d644; // semi transparent
+$lh-gray-0: #d6d6d622; // semi transparent
 $lh-gray-1: #BCB8B1;
 $lh-gray-2: #8A817C;
 $lh-gray-3: #222823;
 $lh-gray-4: #191919;
-$lh-black: #08090A;
+$lh-black:  #08090A;
 
 
 
@@ -51,7 +54,7 @@ $font-size: 25px;
 /////////////////////////////
 
 // Base document colors
-$navbar-bg: $lh-grn-3;  // navbar
+$navbar-bg: $lh-grn-4;  // navbar
 $navbar-fg: $lh-cream;  // navbar foreground elements
 $navbar-hl: $lh-grn-1;  // highlight color when on a page
 $sidebar-bg: $lh-grn-1; // sidebar bg for "docked" style
@@ -122,12 +125,12 @@ pre code:not(.sourceCode) { background-color: white; }
 
 
 body {
-  font-family: Figtree, serif;
+  font-family: Figtree, Arial, sans-serif;
   font-weight: 400;
 }
 
 h1, h2, h3 {
-  font-family: Figtree, serif;
+  font-family: Figtree, Arial, sans-serif;
   font-weight: 700;
   color: #167b62;
 }
@@ -165,23 +168,6 @@ pre code {
 
 .slide-deck{
   border: 3px solid #dee2e6;
-    border-top-color: rgb(222, 226, 230);
-    border-top-style: solid;
-    border-top-width: 3px;
-    border-right-color: rgb(222, 226, 230);
-    border-right-style: solid;
-    border-right-width: 3px;
-    border-bottom-color: rgb(222, 226, 230);
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-left-color: rgb(222, 226, 230);
-    border-left-style: solid;
-    border-left-width: 3px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
   width: 100%;
   height: 475px;
 }
@@ -213,7 +199,7 @@ div.callout-exercise.callout {
 }
 
 div.callout-exercise.callout-style-default > .callout-header {
-  background-color: $lh-blu-1;
+  background-color: $lh-blu-0;
 }
 
 .callout-exercise > .callout-header::before {
@@ -234,7 +220,7 @@ div.callout-answer.callout {
 }
 
 div.callout-answer.callout-style-default > .callout-header {
-  background-color: $lh-blu-1;
+  background-color: $lh-blu-0;
 }
 
 // Hint callout styling
@@ -249,7 +235,7 @@ div.callout-hint.callout {
 }
 
 div.callout-hint.callout-style-default > .callout-header {
-  background-color: $lh-yel-1;
+  background-color: $lh-yel-0;
 }
 
 // Example callout styling
@@ -264,5 +250,5 @@ div.callout-example.callout {
 }
 
 div.callout-example.callout-style-default > .callout-header {
-  background-color: $lh-pur-1;
+  background-color: $lh-pur-0;
 }
