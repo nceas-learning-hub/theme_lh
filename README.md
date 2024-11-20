@@ -41,7 +41,11 @@ upon (i.e., lighter and darker variations for various uses) in the Quarto extens
 
 ## SCSS for Quarto slides
 
-`scss/lh_slides.scss` contains formatting and style information for Learning Hub slides.  
+`scss/lh_slides_style.scss` contains formatting and style information for Learning Hub slides.
+Unfortunately, Quarto does not (currently) support using a URL for a theme, so the
+user should place this file in the folder with the slides .qmd file.  On the bright side,
+this could allow the user some flexibility if they really wanted to add some new style,
+since the style guide would no longer be dependent on the online version...
 
 ## SCSS Stylesheet Extension For Quarto
 
