@@ -32,7 +32,7 @@ upon (i.e., lighter and darker variations for various uses) in the Quarto extens
 * <span style="color:white;background:#A23923;font-family:monospace">#A23923</span> red (from previous LH style guide)
 * <span style="color:white;background:#DB9D26;font-family:monospace">#DB9D26</span> yellow (from previous LH style guide)
 * <span style="color:white;background:#167B62;font-family:monospace">#167B62</span> green (from NCEAS LH site headers)
-* <span style="color:white;background:#a1cac0;font-family:monospace">#a1cac0</span> light green (lightened version of previous)
+* <span style="color:white;background:#A1CAC0;font-family:monospace">#A1CAC0</span> light green (lightened version of previous)
 * <span style="color:white;background:#00588B;font-family:monospace">#00588B</span> blue (viridis blue)
 * <span style="color:white;background:#4B0055;font-family:monospace">#4B0055</span> purple (viridis purple)
 * <span style="color:black;background:#F4F3EE;font-family:monospace">#F4F3EE</span> off-white (warm light gray)
