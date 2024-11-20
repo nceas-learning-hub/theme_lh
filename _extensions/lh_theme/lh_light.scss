@@ -40,14 +40,16 @@ $lh-black:  #08090A;
 //          Fonts          //
 /////////////////////////////
 
-$font-size: 25px;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 /* NCEAS Learning Hub site uses Avenir... some free options on Google Fonts:
 // Sen, Figtree, Manrope, Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+// Font Awesome:
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+$font-family-sans-serif: Figtree, Arial, sans-serif;
+$font-family-serif: serif;
+$font-size: 25px;
 
 /////////////////////////////
 //        Doc colors       //
@@ -125,12 +127,12 @@ pre code:not(.sourceCode) { background-color: white; }
 
 
 body {
-  font-family: Figtree, Arial, sans-serif;
+  font-family: $font-family-sans-serif;
   font-weight: 400;
 }
 
 h1, h2, h3 {
-  font-family: Figtree, Arial, sans-serif;
+  font-family: $font-family-sans-serif;
   font-weight: 700;
   color: #167b62;
 }
