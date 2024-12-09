@@ -6,8 +6,16 @@ contributes:
   formats:
     html:
       theme:
-        - lh_light.scss
-        - lh_dark.scss
+        light: lh_light.scss
+        dark: lh_dark.scss
+      css: lh_style.css
+      toc: true
+      number-sections: true
+      code-overflow: wrap
+      code-line-numbers: false
+      code-copy: hover
+      link-external-newwindow: true
+      link-external-icon: false
   filters:
     - callout_exercise.lua
 ### Keep minimal here - leave things like TOC and number sections in the
