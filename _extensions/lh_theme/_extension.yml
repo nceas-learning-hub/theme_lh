@@ -16,6 +16,7 @@ contributes:
       code-copy: hover
       link-external-newwindow: true
       link-external-icon: false
+      title-block-banner: "#44444444"
   filters:
     - callout_exercise.lua
 ### Keep minimal here - leave things like TOC and number sections in the
