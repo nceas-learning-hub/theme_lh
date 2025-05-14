@@ -8,7 +8,7 @@ contributes:
       theme:
         light: lh_light.scss
         dark: lh_dark.scss
-      css: lh_style.css
+      # css: lh_style.css ### deprecated, doesn't seem to work on remote
       toc: true
       number-sections: true
       code-overflow: wrap
