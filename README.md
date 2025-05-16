@@ -5,7 +5,7 @@
 There currently exists a [Google doc describing a style guide](https://docs.google.com/document/d/1TTDdxCXuyqDoY8VaXNbnVCWrf9djwb2dww92lBGJeEo/edit?tab=t.0).
 However, the colors are not consistent with usage on the NCEAS Learning Hub site,
 and are not consistently used in Learning Hub slide decks.  Here I propose an update
-to the LH style guide to be used in the `coreR` package.
+to the LH style guide to be used in the `lhCore` package.
 
 __Fonts:__
 
@@ -67,16 +67,14 @@ quarto add nceas-learning-hub/lh_theme
 
 This installs the extension under the `_extensions` directory in the course repository.
 
-In the `{coreR}` package, there is a function, `install_theme()`, that can do the same.
-This was only necessary to get around the prompting in the `quarto add` method for
-a programmatic method of installing the extension.
+In the `{lhCore}` package, there is a function, `install_theme()`, that can do the same, in the context of `setup_course_structure(theme = 'lh')` function.
 
-### Using in coreR
+### Using 
 
-The themes included in this extension can be called in the `_quarto.yml`.  This is already set up in the `_quarto_template.yml` that is installed in the course directory when running `coreR::setup_lessons()`.
+The themes included in this extension can be called in the `_quarto.yml`.  This is already set up in the `_quarto_template.yml` that is installed in the course directory when running `lhCore::setup_lessons()`.  Note that the `theme` folder is left generic (no `lh` reference) so that other themes (e.g., `theme_adc`, `theme_delta`) can be developed without having to modify the `_quarto.yml` file.
 
 ```
     theme:
-       light: _extensions/nceas-learning-hub/lh_theme/lh_light.scss
-       dark: _extensions/nceas-learning-hub/lh_theme/lh_dark.scss
+       light: _extensions/nceas-learning-hub/theme/lh_light.scss
+       dark: _extensions/nceas-learning-hub/theme/lh_dark.scss
 ```
