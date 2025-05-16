@@ -6,8 +6,9 @@ contributes:
   formats:
     html:
       theme:
-        light: lh_light.scss
-        dark: lh_dark.scss
+        light: theme_light.scss
+        dark: theme_dark.scss
+      css: banner/banner.css
       toc: true
       number-sections: true
       code-overflow: wrap
